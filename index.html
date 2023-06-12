@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="main.ico" />
+    <title>Matvey Rotte</title>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <canvas id="DynamicCanvas" width="200" height="100"></canvas>
+
+    <!-- THREE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
+    <!-- dat-gui -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+    <!-- Functions.js -->
+    <script type="text/javascript" src="jsScripts/functions.js"></script>
+    <!-- Init.js -->
+    <script type="text/javascript" src="jsScripts/init.js"></script>
+    <!-- Controller.js -->
+    <script type="text/javascript" src="jsScripts/controller.js"></script>
+    <!-- Main.js -->
+    <script type="text/javascript" src="jsScripts/main.js"></script>
+    <!-- OrbitControls -->
+    <script type="module">
+      import { OrbitControls } from "https://threejs.org/examples/jsm/controls/OrbitControls.js";
+      var controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableZoom = false;
+      controls.enablePan = false;
+      controls.enableRotate = false;
+    </script>
+  </body>
+</html>
